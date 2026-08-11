@@ -1,5 +1,5 @@
 # install.ps1 - Installation af Book Digitalization Tools
-# Brug: irm https://dittbrugernavn.github.io/install.ps1 | iex
+# Brug: irm https://MBBP1.github.io/install.ps1 | iex
 
 $logFile = "$env:TEMP\BookDigitalizer_install_$(Get-Date -Format 'yyyyMMdd_HHmmss').log"
 Start-Transcript -Path $logFile -Append
@@ -244,8 +244,8 @@ $scriptDir = "$env:USERPROFILE\Documents\BookDigitalizer"
 New-Item -ItemType Directory -Force -Path $scriptDir | Out-Null
 
 # Skift disse til dine egne værdier
-$githubUser = "dittbrugernavn"
-$githubRepo = "dit-repo"
+$githubUser = "MBBP1"
+$githubRepo = "bookshare"
 $rawBase = "https://raw.githubusercontent.com/$githubUser/$githubRepo/main"
 
 $scripts = @(
